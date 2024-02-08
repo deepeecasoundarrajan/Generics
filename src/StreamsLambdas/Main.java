@@ -27,6 +27,7 @@ public class Main {
 
         list.stream().filter(x -> x%2 == 0)
                      .map(x -> x*x)
+                     .sorted((a, b) -> (b-a))
                      .forEach(x -> System.out.println(x));
         String[] arr = new String[]{"hi", "hello", "welcome"};
         Arrays.stream(arr).forEach(x -> System.out.println(x));
